@@ -1,0 +1,27 @@
+<%- include ('../partials/header') %>
+
+<div class="container my-5">
+  <header>
+    <h1>
+      <%= superhero.name %>
+    </h1>
+    <br />
+    <small>
+      <%= (superhero.alias) %>
+    </small>
+  </header>
+
+  <hr />
+
+  <div class="content">
+    Registered: <%- superhero.createdAt.toLocaleString('en-CA') %>
+  </div>
+
+  <p class="mt-5">
+    <a href="/superheroes">
+      Back to registered list...
+    </a>
+  </p>
+</div>
+
+<%- include ('../partials/footer') %>

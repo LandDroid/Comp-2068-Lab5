@@ -1,0 +1,32 @@
+LAB 04 - Instructions
+
+OBJECTIVE:
+  Demonstrate your knowledge of Mongoose and Models by fixing the bugs
+
+STEPS:
+  1) Repair the following 5 issues
+    a) Can't run the application due to this error:
+       "Error: Cannot find module 'express'"
+       Fix it so there are no missing libraries
+    b) Can't see the form in the "new" view:
+       - /superheroes/new
+       Fix it so we can see the form
+    c) When editing a superhero it always creates a new one.
+       Fix it so it updates the selected hero.
+    d) The "index" view won't load with the list of
+       superheroes:
+       - /superheroes
+       Fix it so we can see the list of registered
+       heroes. (Also, create at least 4)
+    e) The created at timestamp is missing from hero
+       documents when a new hero is created:
+       Fix the model so the created at timestamp
+       is auto-created when we save a new hero
+  2) Push all code to Github
+  3) Deploy your application to Heroku
+     - Don't forget to add your environment variables
+
+RUBRIC:
+  50 points - Bug Fixes
+  50 points - Pushing and Deploying WORKING code
+              (0 if it doesn't work)

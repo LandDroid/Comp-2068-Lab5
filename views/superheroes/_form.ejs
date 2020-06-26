@@ -1,0 +1,32 @@
+<form
+  action="<%= (typeof actionPath === 'undefined') ? '/superheroes' : actionPath %>"
+  ,method="POST"
+>
+  <% if (typeof actionPath != 'undefined') { %>
+  <input type="hidden" name="id" value="<%= formData.id %>" />
+  <% } %>
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      name="name"
+      class="form-control"
+      value="<%= formData.name %>"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="alias">Alias</label>
+    <input
+      type="text"
+      name="alias"
+      class="form-control"
+      value="<%= formData.alias %>"
+    />
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-dark">Submit</button>
+  </div>
+</form>
