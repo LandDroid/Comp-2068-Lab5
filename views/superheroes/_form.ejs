@@ -1,8 +1,9 @@
 <form
   action="<%= (typeof actionPath === 'undefined') ? '/superheroes' : actionPath %>"
-  ,method="POST"
+  ,
+  method="POST"
 >
-  <% if (typeof actionPath != 'undefined') { %>
+  <% if (typeof actionPath !== 'undefined') { %>
   <input type="hidden" name="id" value="<%= formData.id %>" />
   <% } %>
 
